@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "public",
+	"target":"psanodeapp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/functions/index.js"
+      }
+    ]
+  }
+}
